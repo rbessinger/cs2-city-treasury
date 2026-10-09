@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paradox Mods publish metadata. Ross uses this mod locally only for now;
+     publishing is a later, explicit decision (see README, Updates section). -->
+<Publish>
+    <ModId Value="CityTreasury" />
+    <DisplayName Value="City Treasury" />
+    <ShortDescription Value="Manage your city treasury: safety net top ups, on demand cash, and a gentle budget autopilot." />
+    <LongDescription Value="City Treasury manages in game money three ways. A safety net keeps the treasury above a floor you set. Cash control adds a chosen amount or sets an exact balance from the options page. A budget autopilot watches the monthly trend and nudges taxes in small capped steps when deficits or surpluses persist." />
+    <Version Value="0.1.0" />
+    <Tags>
+        <Tag Value="Code Mod" />
+    </Tags>
+</Publish>

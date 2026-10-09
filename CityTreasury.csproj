@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- Cities: Skylines II code mod project.
+         Requires the official Modding Toolchain, installed from inside the
+         game (Options > Modding). The toolchain sets the CSII_TOOLPATH
+         user environment variable that the imports below rely on.
+         Build: dotnet build -c Release
+         The toolchain post build step (Mod.targets) runs ModPostProcessor
+         and deploys the mod into the local Mods folder automatically. -->
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net472</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AssemblyName>CityTreasury</AssemblyName>
+        <RootNamespace>CityTreasury</RootNamespace>
+        <Version>0.1.0</Version>
+    </PropertyGroup>
+
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
+
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
+
+</Project>
